@@ -1,187 +1,109 @@
 /* MOBILE VERSION (and general) */
 
-* {
-	box-sizing: border-box;
-	color: #f7f7f7;
-	text-shadow: 0 0 2.5vw rgba(247, 247, 247, 0.3);
-	font-family: "Lato", sans-serif;
-}
+@media only screen {
 
-body {
-	background: #000000;
-	background-image: url(../images/background.jpg);
-}
-
-.grid-container {
-	background-image: url(../images/foreground.jpg);
-	box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 1);
-}
-
-.dividingline img {
-	width: 100%;
-	height: 2px;
-	box-shadow: 0 0 31px rgba(255, 255, 255, 0.618034);
-}
-
-h1, h2 {
-	font-family: "Black Ops One", sans-serif;
-	font-weight: normal;
-	color: #f7f7f7;
-	text-align: center;
-}
-
-h1 {
-	font-size: 16vw;
-	margin-top: 7.5vw;
-	margin-bottom: -1vw;
-	text-shadow: 0 0 11vw rgba(255, 255, 255, 0.618034);
-}
-
-h2 {
-	font-size: 12vw;
-	margin-top: 7.5vw;
-	margin-bottom: 4vw;
-}
-
-article p {
-	margin: 1%;
-	padding: 0.5vw;
-	margin-bottom: 7.5vw;
-	text-align: left;
-	font-size: 4.5vw;
-}
-
-a, p em {
-	font-style: normal;
-	text-shadow: 0 0 1.5vw #f7f7f7;
-}
-
-.top {
-	padding-bottom: 2vw;
-}
-
-img {
-	box-shadow: 1px 3px 12px 0 rgba(0, 0, 0, 0.5);
-}
-
-.cell a {
-	display: block;
-	text-decoration: none;
-}
-
-/*---------------------------------------*/
-
-/* DESKTOP VERSION: */
-
-@media screen and (min-width: 700px) {
-	h1 {
-		font-size: 7.5vw;
-		margin-top: 0;
-		padding-top: 4vw;
-		margin-bottom: 0.5vw;
-		text-shadow: 0 0 6vw rgba(255, 255, 255, 0.618034);
-	}
-
-	h2 {
-		font-size: 5.5vw;
-		margin-top: 1vw;
-		margin-bottom: 1.5vw;
-	}
-
-	.wrapper {
-		min-height: 100vh;
-		min-width: 700px;
-		max-width: 1200px;
-		margin: 0 auto 0 auto;
-		background: #000000;
-		background-image: url(../images/foreground.jpg);
-		box-shadow: 0 0 150px 0 rgba(0, 0, 0, .8);
+	* {
+		box-sizing: border-box;
+		color: #f7f7f7ff;
+		font-family: "Lato", sans-serif;
 	}
 
 	body {
-		margin: 0;
+		background: #000000;
+		background-image: url(../images/background.jpg);
 	}
 
-	a, p em {
-		text-shadow: 0 0 0.49vw #f7f7f7;
+	.grid-container {
+		background-image: url(../images/foreground.jpg);
+		box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 1);
+		padding-top: 1vw;
+		padding-bottom: 3.3vw;
 	}
 
-	.row {
-		 overflow: hidden;
+	h1 {
+		font-family: "Black Ops One", sans-serif;
+		font-weight: normal;
+		color: #f7f7f7ff;
+		text-align: center;
+		font-size: 12.5vw;
+		margin-top: 5vw;
+		margin-bottom: -1vw;
+		text-shadow: 0 0 11vw #f7f7f79c;
 	}
 
-	.top {
-		padding-top: 2.25vw;
-		padding-bottom: 2.5vw;
+	div .cell p {
+		padding: 3vw;
+		margin-bottom: 1vw;
+		text-align: justify;
+		font-size: 4.5vw;
+		text-shadow: 0 0 2.5vw #f7f7f73f;
 	}
 
-	/* THREE ITEMS */
-	.col {
-		display: inline-block;
-		width: 31.333333%;
+	.cell a {
+		display: block;
+		text-decoration: none;
 	}
 
-	/* TWO ITEMS */
-	.feature {
-		width: 48%;
-	}
-
-	/* FOUR ITEMS */
-	.common {
-		width: 23%;
-	}
-
-	article p {
-		/*padding-left: 3.5%;
-		padding-right: 3.5%;*/
-		text-align: left;
-		font-size: 2.2vw;
-		margin-top: 0;
-		margin-bottom: 1.2vw;
-	}
-
-	main {
-		padding-bottom: 1.25vw;
+	.images, .itsme img {
+		box-shadow: 0.5px 1.5px 9px 0 #0000004f;
 	}
 }
 
-/* DESKTOP VERSION when WRAPPER STARTS: */
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 40em) {
+	div .cell p {
+		padding: 1vw;
+		margin-bottom: 1.5vw;
+		font-size: 2vw;
+	}
+
 	h1 {
-		font-size: 90px;
-		margin: 0;
-		padding-top: 48px;
-		margin-bottom: 6px;
-		text-shadow: 0 0 72px rgba(255, 255, 255, 0.618034);
+		font-size: 7vw;
+		margin-top: 2vw;
+		margin-bottom: -1vw;
+		text-shadow: 0 0 11vw #f7f7f7b6;
 	}
 
-	h2 {
-		font-size: 66px;
-		margin-top: 12px;
-		margin-bottom: 18px;
+	.grid-container {
+		padding-top: 1vw;
+		padding-bottom: 2vw;
 	}
 
-	a {
-		text-shadow: 0 0 5.88px #f7f7f7;
+	.aboutme p {
+		margin-right: 2vw;
 	}
 
-	.top {
-		padding-top: 27px;
-		padding-bottom: 30px;
+	.aboutme img {
+		margin-top: 2vw;
+	}
+}
+
+
+@media only screen and (min-width: 76.05em) {
+	div .cell p {
+		padding: 12.168px;
+		margin-bottom: 18.252px;
+		font-size: 24.336px;
+		text-shadow: 0 0 30.42px #f7f7f73f;
 	}
 
-	.col {
-		padding: 6px;
+	h1 {
+		font-size: 85.176px;
+		margin-top: 24.336px;
+		margin-bottom: -12.168px;
+		text-shadow: 0 0 133.848px #f7f7f79c;
 	}
 
-	article p {
-		text-align: left;
-		font-size: 26.4px;
-		margin-bottom: 14.4px;
+	.grid-container {
+		padding-top: 12.168px;
+		padding-bottom: 24.336px;
 	}
 
-	main {
-		padding-bottom: 15px;
+	.aboutme p {
+		margin-right: 24.336px;
+	}
+
+	.aboutme img {
+		margin-top: 24.336px;
 	}
 }
