@@ -2,7 +2,7 @@
 
 @media only screen {
 
-	*, label {
+	*, label, form {
 		box-sizing: border-box;
 		color: #f7f7f7ff;
 		font-family: "Lato", sans-serif;
@@ -69,12 +69,37 @@
 	}
 
 	.contactGrid {
-		height: 100vh;
+		height: 100.1vh;
 	}
 
 	label {
 		font-size: 4vw;
 		text-shadow: 0 0 2.5vw #f7f7f73f;
+	}
+
+	form input[type=text] {
+		background-image: url(../images/foreground.jpg);
+		border: 2px solid #f7f7f7ff;
+		border-radius: 3px;
+		color: #f7f7f7ff;
+	}
+
+	form ::placeholder {
+		color: #f7f7f74f;
+	}
+
+	form input[type=text]:focus {
+		border: 2px solid #f7f7f7ff;
+		border-radius: 3px;
+		box-shadow: 0px 0px 10px 0 #f7f7f7ff;
+}
+
+	.contactGrid form {
+		margin-top: 3vw;
+	}
+
+	.divline img {
+		box-shadow: 0px 0px 8px 0 #f7f7f74f;
 	}
 }
 
@@ -112,6 +137,10 @@
 
 	label {
 		font-size: 2vw;
+	}
+
+	.contactGrid form {
+		margin-top: 0.35vw;
 	}
 }
 
@@ -160,5 +189,9 @@
 	label {
 		font-size: 24.336px;
 		text-shadow: 0 0 30.42px #f7f7f73f;
+	}
+
+	.contactGrid form {
+		margin-top: 4.2588px;
 	}
 }
