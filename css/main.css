@@ -2,7 +2,7 @@
 
 @media only screen {
 
-	* {
+	*, label {
 		box-sizing: border-box;
 		color: #f7f7f7ff;
 		font-family: "Lato", sans-serif;
@@ -54,17 +54,27 @@
 	}
 
 	.menu div p {
+		font-size: 5.5vw;
 		text-align: center;
 	}
 
 	.menu .cell {
-		margin-bottom: -2vw;
+		margin-bottom: -2.5vw;
 	}
 
 	.menu div .active
 	{
 		font-style: normal;
 		text-shadow: 0 0 1.5vw #f7f7f7;
+	}
+
+	.contactGrid {
+		height: 100vh;
+	}
+
+	label {
+		font-size: 4vw;
+		text-shadow: 0 0 2.5vw #f7f7f73f;
 	}
 }
 
@@ -99,6 +109,10 @@
 	.menu div a p {
 		font-size: 3vw;
 	}
+
+	label {
+		font-size: 2vw;
+	}
 }
 
 
@@ -131,7 +145,7 @@
 	}
 
 	.menu .cell {
-		margin-bottom: -24.336px;
+		margin-bottom: -30.42px;
 	}
 
 	.menu div .active
@@ -139,7 +153,12 @@
 		text-shadow: 0 0 18.252px #f7f7f7;
 	}
 
-		.menu div a p {
-			font-size: 36.504px;
-		}
+	.menu div a p {
+		font-size: 36.504px;
+	}
+
+	label {
+		font-size: 24.336px;
+		text-shadow: 0 0 30.42px #f7f7f73f;
+	}
 }
